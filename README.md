@@ -6,7 +6,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-The team hopes to discover the distribution of happiness levels across the globe. We may then find the reason for the distribution with the available attributes given. It is really interesting to analyze the Worls Happiness Report because there are many countries with higher and lower level of happiness than the ones we live in. Furthermore, it provides good insight to cultural, governmental, and economy differences in different parts of the world. It would be neat to find out if what other countries could do to improve the happiness of its citezens.
+The team hopes to discover the distribution of happiness levels across the globe. We may then find the reason for the distribution with the available attributes given. It is really interesting to analyze the Worls Happiness Report because there are many countries with higher and lower level of happiness than the ones we live in. Furthermore, it provides good insight to cultural, governmental, and economy differences in different parts of the world. It would be neat to find out what other countries could do to improve the happiness of its citizens.
 Some questions the team would like to explore include the following: Which country is the happiest? Which country is the least happiest? Why are these countries happy/unhappy? Which factor is most correlated with an increase in a country's happiness? How can the team visualize the data?
 The team can imagine building a user-facing Dashboard with using this dataset. Information such as social support, life expectancy, freedom, generosity, corruption would be ideal to graph visually.
 
@@ -19,7 +19,7 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 - Karel Joshua: Hi, I am a second year computer science major!
 - Kaitlyn : A 3rd year biology major
-- Shaheer: I am a second year computer science major
+- Shaheer: I am a first year, heading into second year, computer science major
 
 ## References
 
