@@ -23,4 +23,4 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 ## References
 
-{Add your stuff here}
+A. Singh and Gallup World Poll, “World Happiness Report 2021,” Kaggle, 22-Mar-2021. [Online]. Available: https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021/metadata. [Accessed: 15-Jul-2021]. 
