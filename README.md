@@ -1,4 +1,4 @@
-# Group 10 - {Analysis of the World Happiness Report 2020}
+# Group 10 - {Analysis of the World Happiness Report 2021}
 
 ## Milestones
 
