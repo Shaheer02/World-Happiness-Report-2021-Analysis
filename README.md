@@ -19,7 +19,7 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 - Karel Joshua: Hi, I am a second year computer science major!
 - Kaitlyn : A 3rd year biology major
-- Person 3: one sentence about you!
+- Shaheer: I am a second year computer science major
 
 ## References
 
