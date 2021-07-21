@@ -5,4 +5,4 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 this is clipped from the readme.md file on the root directory.
 
-Variable definitions are given in the ./data/raw/Appendix file.
+Variable definitions are given in the ./data/raw/Appendix.pdf file.
