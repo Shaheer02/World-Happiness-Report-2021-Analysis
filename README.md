@@ -17,9 +17,9 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 ## Team Members
 
-- Karel Joshua: Hi, I am a second year computer science major!
-- Kaitlyn : A 3rd year biology major
-- Shaheer: I am a first year, heading into second year, computer science major
+- Karel Joshua: I wish to visualize the happiness level across the globe and then further know the reason for the distribution.
+- Kaitlyn : A 3rd year biology major. I would like to look at the specific correlations with different factor contributing to different happiness levels
+- Shaheer: I am a first year, heading into second year, computer science major. I would like to look at the changes to the happiness of regions as a result of covid-19
 
 ## References
 
