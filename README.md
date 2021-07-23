@@ -19,8 +19,7 @@ The name of the data is World Happiness Report 2021. Its license is CC0: Public 
 
 - Karel Joshua: I wish to visualize the happiness level across the globe and then further know the reason for the distribution.
 - Kaitlyn : A 3rd year biology major. I would like to look at the specific correlations with different factor contributing to different happiness levels
-- Shaheer: I am a first year, heading into second year, computer science major. I would like to look at the changes to the happiness of regions as a result of covid-19
-
+- Shaheer: I am a first year, heading into second year, computer science major. I would like to look at the factors that largely contribute to alleviating          happiness during times of distress and uncertainty.
 ## References
 
 A. Singh and Gallup World Poll, “World Happiness Report 2021,” Kaggle, 22-Mar-2021. [Online]. Available: https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021/metadata. [Accessed: 15-Jul-2021]. 
