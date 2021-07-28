@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_and_process(path_2021, path_2020):
+def load_and_process_karel(path_2021, path_2020):
     """
     Load and process the given data.
     rename column headings that are necessary and insert columns desired.
@@ -19,7 +19,7 @@ def load_and_process(path_2021, path_2020):
 
     Examples
     --------
-    >>> load_and_process(path_2021='../../data/raw/world-happiness-report-2021.csv', path_2020='../../data/raw/world-happiness-report-2020.csv')
+    >>> load_and_process_karel(path_2021='../../data/raw/world-happiness-report-2021.csv', path_2020='../../data/raw/world-happiness-report-2020.csv')
     <class 'pandas.core.frame.DataFrame'>
     """
     # read supporting file
@@ -36,8 +36,9 @@ def load_and_process(path_2021, path_2020):
                          'Score_difference': 'Score difference'})
     )
     
-    ---
-    
+    return df
+
+def load_and_process_kaitlyn(path_2021, path_2020):    
     # Method Chain 1
     # No Missing Data 
     happiness2020 = pd.read_csv("/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/data/raw/world-happiness2020.csv")
@@ -67,6 +68,3 @@ def load_and_process(path_2021, path_2020):
                                       'Ladder score': 'Ladder score 2021'})
                    .insert(3, 'Ladder Score Percent Change From Previous Year', ((happiness2021['Ladder score'] - happiness2020['Ladder  score'])/happiness2020['Ladder score'])*100))
     return happinessdata1
-    
-    
-    return df
