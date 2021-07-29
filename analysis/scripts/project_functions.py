@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_and_process_karel(path_2021, path_2020):
+def load_and_process(path_2021, path_2020):
     """
     Load and process the given data.
     rename column headings that are necessary and insert columns desired.
@@ -35,6 +35,12 @@ def load_and_process_karel(path_2021, path_2020):
                          'Ladder_score_2020': 'Ladder score 2020',
                          'Score_difference': 'Score difference'})
         .dropna()
+        .reset_index()
+        .drop(columns=['index', 'Standard error of ladder score', 'upperwhisker', 'lowerwhisker',
+                       'Explained by: Log GDP per capita', 'Explained by: Social support',
+                       'Explained by: Healthy life expectancy', 'Explained by: Freedom to make life choices',
+                       'Explained by: Generosity', 'Explained by: Perceptions of corruption',
+                       'Dystopia + residual'])
     )
     
     return df
