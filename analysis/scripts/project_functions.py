@@ -34,11 +34,12 @@ def load_and_process_karel(path_2021, path_2020):
         .rename(columns={'Ladder score': 'Ladder score 2021',
                          'Ladder_score_2020': 'Ladder score 2020',
                          'Score_difference': 'Score difference'})
+        .dropna()
     )
     
     return df
 
-def load_and_process_kaitlyn(path_2021, path_2020):    
+def load_and_process_kaitlyn():    
     # Method Chain 1
     # No Missing Data 
     happiness2020 = pd.read_csv("/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/data/raw/world-happiness2020.csv")
