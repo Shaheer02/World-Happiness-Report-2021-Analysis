@@ -1,52 +1,51 @@
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
-def load_and_process(url_or_path_to_csv_file):
-  """
-  Load and process the given data.
-  rename column headings that are necessary and insert columns desired.
+def load_and_process_karel(path_2021, path_2020):
+    """
+    Load and process the given data.
+    rename column headings that are necessary and insert columns desired.
 
-  Parameters
-  ----------
-  url_or_path_to_csv_file : str
-      The path to the file.csv.
-      
-  Returns
-  -------
-  <class 'pandas.core.frame.DataFrame'>
+    Parameters
+    ----------
+    path_2021 : str
+      The path to world-happiness-report-2021.csv
+    path_2020 : str
+      The path to world-happiness-report-2020.csv
+
+    Returns
+    -------
+    <class 'pandas.core.frame.DataFrame'>
       The dataFrame containing the cleaned data. 
-      
-  Examples
-  --------
-  >>> make_palindrome('../../data/raw/world-happiness-report-2021.csv')
-  <class 'pandas.core.frame.DataFrame'>
-  """
+
+    Examples
+    --------
+    >>> load_and_process_karel(path_2021='../../data/raw/world-happiness-report-2021.csv', path_2020='../../data/raw/world-happiness-report-2020.csv')
+    <class 'pandas.core.frame.DataFrame'>
+    """
+    # read supporting file
+    data_2021 = pd.read_csv(path_2021)
+    data_2020 = pd.read_csv(path_2020)
     
-  # supporting file
-  data_2020 = pd.read_csv('../../data/raw/world-happiness-report-2020.csv')
-
-  # Method Chain 1 (Load data and deal with missing data)
-
-  # no missing values and the head are self-explanatory except "ladder score"
-  data_2021 = (
-      pd.read_csv(url_or_path_to_csv_file)
-      .rename(columns={'Ladder score': 'Ladder score 2021'})
+    # no need for cleaning since data has no missing value and sorted decendingly by ladder score
+    # method chain for data wrangling
+    df = (
+        data_2021.assign(Ladder_score_2020 = data_2020['Ladder score'],
+                         Score_difference = data_2021['Ladder score'] - data_2020['Ladder score'])
+        .rename(columns={'Ladder score': 'Ladder score 2021',
+                         'Ladder_score_2020': 'Ladder score 2020',
+                         'Score_difference': 'Score difference'})
     )
-  print(type(data_2021))
-  data_2020 = (
-      pd.read_csv('../../data/raw/world-happiness-report-2020.csv')
-      .rename(columns={'Ladder score': 'Ladder score 2020'})
-  )
+    
+    return df
 
-  # Method Chain 2 (Create new columns, drop others, and do processing)
+def load_and_process_kaitlyn(path_2021, path_2020):    
+    # Method Chain 1
+    # No Missing Data 
+    happiness2020 = pd.read_csv("/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/data/raw/world-happiness2020.csv")
+    happiness2021 = pd.read_csv("/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/data/raw/world-happiness-report-2021.csv")
 
-  # add column 'Ladder score 2020' and 'Score difference' using pd.dataFrame.insert()
-  data_2021.insert(3, 'Ladder score 2020', data_2020['Ladder score 2020'])
-  data_2021.insert(4, 'Score difference', data_2021['Ladder score 2021'] - data_2020['Ladder score 2020'])
 
-  # Make sure to return the latest dataframe
-
+<<<<<<< HEAD
   return data_2021
 
 ---
@@ -57,6 +56,8 @@ def load_and_process(url_or_path_to_csv_file):
     happiness2021 = pd.read_csv("/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/data/raw/world-happiness-report-2021.csv")
 
 
+=======
+>>>>>>> f77658b19fcf38f7127b1effcb6ddc93199533e0
     # Method Chain 2 
     happinessdata1 = (happiness2021
                      .rename(columns={'Country name': 'Country Name', 
@@ -79,4 +80,8 @@ def load_and_process(url_or_path_to_csv_file):
                                       'Dystopia + residual': 'Dystopia and Residual',
                                       'Ladder score': 'Ladder score 2021'})
                    .insert(3, 'Ladder Score Percent Change From Previous Year', ((happiness2021['Ladder score'] - happiness2020['Ladder  score'])/happiness2020['Ladder score'])*100))
+<<<<<<< HEAD
     return happinessdata1
+=======
+    return happinessdata1
+>>>>>>> f77658b19fcf38f7127b1effcb6ddc93199533e0
