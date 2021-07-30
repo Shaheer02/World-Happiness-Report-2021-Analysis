@@ -75,3 +75,27 @@ def load_and_process_kaitlyn():
                    .insert(3, 'Ladder Score Percent Change From Previous Year', ((happiness2021['Ladder score'] - happiness2020['Ladder  score'])/happiness2020['Ladder score'])*100))
 
     return happinessdata1
+
+def load_and_process_shaheer(urlOrPathCSV1, urlOrPathCSV2):
+
+    # Method Chain 1 (Load data and deal with missing data)
+
+    df1 = pd.read_csv(urlOrPathCSV1).dropna(axis='rows',how='any')
+          
+
+    # Method Chain 2 (drop columns, rename columns and do processing)
+
+    df1 = df1.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns').rename(columns={'Ladder score':'Ladder score 2021'})
+
+    # Make sure to return the latest dataframe
+
+    # Method Chain 3 (Add new columns and reorder)
+    df2 = pd.read_csv(urlOrPathCSV2)
+    df1.insert(3,'Ladder score 2020',df2['Ladder score'])
+    df1.insert(4,'Ladder score difference (2021 subtracted by 2020)',df1['Ladder score 2021'] - df1['Ladder score 2020'])
+    temp = df1['Standard error of ladder score']
+    df1 = df1.drop('Standard error of ladder score',axis='columns')
+    df1.insert(3,'Standard error of ladder score 2021',temp)
+    df1.insert(5,'Standard error of ladder score 2020',df2['Standard error of ladder score'])
+    
+    return df1
