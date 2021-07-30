@@ -53,8 +53,7 @@ def load_and_process_kaitlyn():
 
     # Method Chain 2 
     happinessdata1 = (happiness2021
-                      .assign(LadderScorePercentChangeFromPreviousYear = ((happiness2021['Ladder score'] - happiness2020['Ladder score'])/happiness2020['Ladder score'])*100))
-                     .rename(columns={'Country name': 'Country Name', 
+                      .assign(LadderScorePercentChangeFromPreviousYear = ((happiness2021['Ladder score'] - happiness2020['Ladder score'])/happiness2020['Ladder score'])*100)).rename(columns={'Country name': 'Country Name', 
                                       'Regional indicator': 'Regional Indicator', 
                                       'Ladder score': 'Ladder Score', 
                                       'Standard error of ladder score': 'Standard Error of Ladder Score', 
