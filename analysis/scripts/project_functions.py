@@ -72,7 +72,7 @@ def load_and_process_kaitlyn():
                                       'Explained by: Freedom to make life choices': 'Explained by: Freedom to make Life Choices',
                                       'Dystopia + residual': 'Dystopia and Residual',
                                       'Ladder score': 'Ladder score 2021'})
-                   .insert(3, 'Ladder Score Percent Change From Previous Year', ((happiness2021['Ladder score'] - happiness2020['Ladder  score'])/happiness2020['Ladder score'])*100))
+                   .insert(3, 'Ladder Score Percent Change From Previous Year', ((happiness2021['Ladder score'] - happiness2020['Ladder score'])/happiness2020['Ladder score'])*100))
 
     return happinessdata1
 
