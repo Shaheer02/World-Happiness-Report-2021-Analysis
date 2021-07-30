@@ -17,7 +17,7 @@ def write_ipynb(notebook, notebook_path):
 
 karel_notebook = read_ipynb('../Karel/milestone2_EDA.ipynb')
 kaitlyn_notebook = read_ipynb('/Users/kaitlynpeverley/Desktop/COSC301/Labs/project-group10-project/analysis/Kaitlyn/milestone2.ipynb')
-shaheer_notebook = read_ipynb('path')
+shaheer_notebook = read_ipynb('../Shaheer/milestone2.ipynb')
 
 final_notebook = copy.deepcopy(karel_notebook)
 final_notebook['cells'] = karel_notebook['cells'] + kaitlyn_notebook['cells'] + shaheer_notebook['cells']
