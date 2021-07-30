@@ -87,7 +87,6 @@ def load_and_process_shaheer(urlOrPathCSV1, urlOrPathCSV2):
 
     df1 = df1.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns').rename(columns={'Ladder score':'Ladder score 2021'})
 
-    # Make sure to return the latest dataframe
 
     # Method Chain 3 (Add new columns and reorder)
     df2 = pd.read_csv(urlOrPathCSV2)
