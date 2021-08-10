@@ -36,11 +36,13 @@ def load_and_process(path_2021, path_2020):
                          'Score_difference': 'Score difference'})
         .dropna()
         .reset_index()
-        .drop(columns=['index', 'Standard error of ladder score', 'upperwhisker', 'lowerwhisker',
-                       'Explained by: Log GDP per capita', 'Explained by: Social support',
-                       'Explained by: Healthy life expectancy', 'Explained by: Freedom to make life choices',
-                       'Explained by: Generosity', 'Explained by: Perceptions of corruption',
-                       'Dystopia + residual'])
+        .drop(columns=['index'])
+        # keeping columns for analysis in tableau
+#         .drop(columns=['index', 'Standard error of ladder score', 'upperwhisker', 'lowerwhisker',
+#                        'Explained by: Log GDP per capita', 'Explained by: Social support',
+#                        'Explained by: Healthy life expectancy', 'Explained by: Freedom to make life choices',
+#                        'Explained by: Generosity', 'Explained by: Perceptions of corruption',
+#                        'Dystopia + residual'])
     )
     
     return df
