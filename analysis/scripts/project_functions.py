@@ -82,23 +82,17 @@ def load_and_process_shaheer(urlOrPathCSV1, urlOrPathCSV2):
     # Method Chain 1 (Load data and deal with missing data)
 
     df2021 = pd.read_csv(urlOrPathCSV1).dropna(axis='rows',how='any')
-     df2020 = pd.read_csv(urlOrPathCSV2).dropna(axis='rows',how='any')
+    df2020 = pd.read_csv(urlOrPathCSV2).dropna(axis='rows',how='any')
           
 
     # Method Chain 2 (drop columns, rename columns and do processing)
 
-    df = df2021.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns').rename(columns={'Ladder score':'Ladder score 2021'})
-    df2021 = df2021.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns').rename(columns={'Ladder score':'Ladder score 2021'})
-    df2020 = df2020.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns').rename(columns={'Ladder score':'Ladder score 2020'})
+    
+    df2021 = df2021.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns')
+    df2020 = df2020.loc[:,'Country name':'Perceptions of corruption'].drop(['upperwhisker','lowerwhisker'], axis='columns')
 
     # Method Chain 3 (Add new columns and reorder)
-    df2020 = pd.read_csv(urlOrPathCSV2)
-    df.insert(3,'Ladder score 2020',df2020['Ladder score'])
-    df.insert(4,'Ladder score difference (2021 subtracted by 2020)',df['Ladder score 2021'] - df['Ladder score 2020'])
-    temp = df['Standard error of ladder score']
-    df = df.drop('Standard error of ladder score',axis='columns')
-    df.insert(3,'Standard error of ladder score 2021',temp)
-    df.insert(5,'Standard error of ladder score 2020',df2020['Standard error of ladder score'])
+  
     
     
-    return (df,df2021,df2020)
+    return (df2021,df2020)
