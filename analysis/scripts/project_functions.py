@@ -82,6 +82,7 @@ def load_and_process_shaheer(urlOrPathCSV1, urlOrPathCSV2):
     # Method Chain 1 (Load data and deal with missing data)
 
     df2021 = pd.read_csv(urlOrPathCSV1).dropna(axis='rows',how='any')
+     df2020 = pd.read_csv(urlOrPathCSV2).dropna(axis='rows',how='any')
           
 
     # Method Chain 2 (drop columns, rename columns and do processing)
