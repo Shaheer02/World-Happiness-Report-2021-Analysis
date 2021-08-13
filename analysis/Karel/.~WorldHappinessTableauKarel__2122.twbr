@@ -1,0 +1,1252 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='WorldHappinessReport_processed_karel' inline='true' name='federated.1llshez07zulbd14gyd081vcgiwf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WorldHappinessReport_processed_karel' name='textscan.1ymho0400952uw1avcans1txyegm'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/CarlJoshua/Documents/UniLife/Year1/SummerTerm/DATA301/Project/group10-project/data/processed/WorldHappinessReport_processed_karel.csv' dataRefreshTime='' directory='Data/processed' filename='WorldHappinessReport_processed_karel.csv' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ymho0400952uw1avcans1txyegm' name='WorldHappinessReport_processed_karel.csv' table='[WorldHappinessReport_processed_karel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country name' ordinal='1' />
+            <column datatype='string' name='Regional indicator' ordinal='2' />
+            <column datatype='real' name='Ladder score 2021' ordinal='3' />
+            <column datatype='real' name='Standard error of ladder score' ordinal='4' />
+            <column datatype='real' name='upperwhisker' ordinal='5' />
+            <column datatype='real' name='lowerwhisker' ordinal='6' />
+            <column datatype='real' name='Logged GDP per capita' ordinal='7' />
+            <column datatype='real' name='Social support' ordinal='8' />
+            <column datatype='real' name='Healthy life expectancy' ordinal='9' />
+            <column datatype='real' name='Freedom to make life choices' ordinal='10' />
+            <column datatype='real' name='Generosity' ordinal='11' />
+            <column datatype='real' name='Perceptions of corruption' ordinal='12' />
+            <column datatype='real' name='Ladder score in Dystopia' ordinal='13' />
+            <column datatype='real' name='Explained by: Log GDP per capita' ordinal='14' />
+            <column datatype='real' name='Explained by: Social support' ordinal='15' />
+            <column datatype='real' name='Explained by: Healthy life expectancy' ordinal='16' />
+            <column datatype='real' name='Explained by: Freedom to make life choices' ordinal='17' />
+            <column datatype='real' name='Explained by: Generosity' ordinal='18' />
+            <column datatype='real' name='Explained by: Perceptions of corruption' ordinal='19' />
+            <column datatype='real' name='Dystopia + residual' ordinal='20' />
+            <column datatype='real' name='Ladder score 2020' ordinal='21' />
+            <column datatype='real' name='Score difference' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ymho0400952uw1avcans1txyegm' name='WorldHappinessReport_processed_karel.csv' table='[WorldHappinessReport_processed_karel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country name' ordinal='1' />
+            <column datatype='string' name='Regional indicator' ordinal='2' />
+            <column datatype='real' name='Ladder score 2021' ordinal='3' />
+            <column datatype='real' name='Standard error of ladder score' ordinal='4' />
+            <column datatype='real' name='upperwhisker' ordinal='5' />
+            <column datatype='real' name='lowerwhisker' ordinal='6' />
+            <column datatype='real' name='Logged GDP per capita' ordinal='7' />
+            <column datatype='real' name='Social support' ordinal='8' />
+            <column datatype='real' name='Healthy life expectancy' ordinal='9' />
+            <column datatype='real' name='Freedom to make life choices' ordinal='10' />
+            <column datatype='real' name='Generosity' ordinal='11' />
+            <column datatype='real' name='Perceptions of corruption' ordinal='12' />
+            <column datatype='real' name='Ladder score in Dystopia' ordinal='13' />
+            <column datatype='real' name='Explained by: Log GDP per capita' ordinal='14' />
+            <column datatype='real' name='Explained by: Social support' ordinal='15' />
+            <column datatype='real' name='Explained by: Healthy life expectancy' ordinal='16' />
+            <column datatype='real' name='Explained by: Freedom to make life choices' ordinal='17' />
+            <column datatype='real' name='Explained by: Generosity' ordinal='18' />
+            <column datatype='real' name='Explained by: Perceptions of corruption' ordinal='19' />
+            <column datatype='real' name='Dystopia + residual' ordinal='20' />
+            <column datatype='real' name='Ladder score 2020' ordinal='21' />
+            <column datatype='real' name='Score difference' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country name]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Country name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regional indicator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Regional indicator]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Regional indicator</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ladder score 2021</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ladder score 2021]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Ladder score 2021</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard error of ladder score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Standard error of ladder score]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Standard error of ladder score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>upperwhisker</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[upperwhisker]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>upperwhisker</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lowerwhisker</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lowerwhisker]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>lowerwhisker</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Logged GDP per capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Logged GDP per capita]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Logged GDP per capita</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social support</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Social support]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Social support</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Healthy life expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Healthy life expectancy]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Healthy life expectancy</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freedom to make life choices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freedom to make life choices]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Freedom to make life choices</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generosity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Generosity]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Generosity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Perceptions of corruption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Perceptions of corruption]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Perceptions of corruption</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ladder score in Dystopia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ladder score in Dystopia]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Ladder score in Dystopia</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Log GDP per capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Log GDP per capita]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Log GDP per capita</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Social support</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Social support]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Social support</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Healthy life expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Healthy life expectancy]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Healthy life expectancy</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Freedom to make life choices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Freedom to make life choices]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Freedom to make life choices</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Generosity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Generosity]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Generosity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Explained by: Perceptions of corruption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Explained by: Perceptions of corruption]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Explained by: Perceptions of corruption</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dystopia + residual</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dystopia + residual]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Dystopia + residual</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ladder score 2020</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ladder score 2020]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Ladder score 2020</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score difference</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score difference]</local-name>
+            <parent-name>[WorldHappinessReport_processed_karel.csv]</parent-name>
+            <remote-alias>Score difference</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country name1' datatype='string' name='[Country name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' name='[Dystopia + residual]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Freedom to make life choices]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Generosity]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Healthy life expectancy]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Log GDP per capita]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Perceptions of corruption]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Explained by: Social support]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Ladder score 2021]' role='measure' type='quantitative' />
+      <column caption='Regional indicator1' datatype='string' name='[Regional indicator]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='WorldHappinessReport_processed_karel.csv' datatype='table' name='[__tableau_internal_object_id__].[WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5]' role='measure' type='quantitative' />
+      <column caption='Lowerwhisker' datatype='real' name='[lowerwhisker]' role='measure' type='quantitative' />
+      <column caption='Upperwhisker' datatype='real' name='[upperwhisker]' role='measure' type='quantitative' />
+      <column-instance column='[Dystopia + residual]' derivation='Avg' name='[avg:Dystopia + residual:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Freedom to make life choices]' derivation='Avg' name='[avg:Explained by: Freedom to make life choices:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Generosity]' derivation='Avg' name='[avg:Explained by: Generosity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Healthy life expectancy]' derivation='Avg' name='[avg:Explained by: Healthy life expectancy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Log GDP per capita]' derivation='Avg' name='[avg:Explained by: Log GDP per capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Perceptions of corruption]' derivation='Avg' name='[avg:Explained by: Perceptions of corruption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Social support]' derivation='Avg' name='[avg:Explained by: Social support:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ladder score 2021]' derivation='Avg' name='[avg:Ladder score 2021:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ladder score 2021]' derivation='Sum' name='[pcto:sum:Ladder score 2021:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Dystopia + residual]' derivation='Sum' name='[sum:Dystopia + residual:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Freedom to make life choices]' derivation='Sum' name='[sum:Explained by: Freedom to make life choices:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Generosity]' derivation='Sum' name='[sum:Explained by: Generosity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Healthy life expectancy]' derivation='Sum' name='[sum:Explained by: Healthy life expectancy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Log GDP per capita]' derivation='Sum' name='[sum:Explained by: Log GDP per capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Perceptions of corruption]' derivation='Sum' name='[sum:Explained by: Perceptions of corruption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Explained by: Social support]' derivation='Sum' name='[sum:Explained by: Social support:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ladder score 2021]' derivation='Sum' name='[sum:Ladder score 2021:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Dystopia + residual:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Log GDP per capita:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Healthy life expectancy:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Generosity:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Generosity:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Dystopia + residual:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Freedom to make life choices:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Social support:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Freedom to make life choices:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Healthy life expectancy:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Log GDP per capita:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Perceptions of corruption:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Perceptions of corruption:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Ladder score 2021:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[pcto:sum:Ladder score 2021:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Social support:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='WorldHappinessReport_processed_karel.csv' id='WorldHappinessReport_processed_karel.csv_762A35E6787D400FBA87DA03FB4156F5'>
+            <properties context=''>
+              <relation connection='textscan.1ymho0400952uw1avcans1txyegm' name='WorldHappinessReport_processed_karel.csv' table='[WorldHappinessReport_processed_karel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Country name' ordinal='1' />
+                  <column datatype='string' name='Regional indicator' ordinal='2' />
+                  <column datatype='real' name='Ladder score 2021' ordinal='3' />
+                  <column datatype='real' name='Standard error of ladder score' ordinal='4' />
+                  <column datatype='real' name='upperwhisker' ordinal='5' />
+                  <column datatype='real' name='lowerwhisker' ordinal='6' />
+                  <column datatype='real' name='Logged GDP per capita' ordinal='7' />
+                  <column datatype='real' name='Social support' ordinal='8' />
+                  <column datatype='real' name='Healthy life expectancy' ordinal='9' />
+                  <column datatype='real' name='Freedom to make life choices' ordinal='10' />
+                  <column datatype='real' name='Generosity' ordinal='11' />
+                  <column datatype='real' name='Perceptions of corruption' ordinal='12' />
+                  <column datatype='real' name='Ladder score in Dystopia' ordinal='13' />
+                  <column datatype='real' name='Explained by: Log GDP per capita' ordinal='14' />
+                  <column datatype='real' name='Explained by: Social support' ordinal='15' />
+                  <column datatype='real' name='Explained by: Healthy life expectancy' ordinal='16' />
+                  <column datatype='real' name='Explained by: Freedom to make life choices' ordinal='17' />
+                  <column datatype='real' name='Explained by: Generosity' ordinal='18' />
+                  <column datatype='real' name='Explained by: Perceptions of corruption' ordinal='19' />
+                  <column datatype='real' name='Dystopia + residual' ordinal='20' />
+                  <column datatype='real' name='Ladder score 2020' ordinal='21' />
+                  <column datatype='real' name='Score difference' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Distribution of Explanatory Factors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldHappinessReport_processed_karel' name='federated.1llshez07zulbd14gyd081vcgiwf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1llshez07zulbd14gyd081vcgiwf'>
+            <column datatype='real' name='[Explained by: Freedom to make life choices]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Generosity]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Healthy life expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Log GDP per capita]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Perceptions of corruption]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Social support]' role='measure' type='quantitative' />
+            <column-instance column='[Explained by: Freedom to make life choices]' derivation='Sum' name='[sum:Explained by: Freedom to make life choices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Generosity]' derivation='Sum' name='[sum:Explained by: Generosity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Healthy life expectancy]' derivation='Sum' name='[sum:Explained by: Healthy life expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Log GDP per capita]' derivation='Sum' name='[sum:Explained by: Log GDP per capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Perceptions of corruption]' derivation='Sum' name='[sum:Explained by: Perceptions of corruption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Social support]' derivation='Sum' name='[sum:Explained by: Social support:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Log GDP per capita:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Social support:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Healthy life expectancy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Freedom to make life choices:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Generosity:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Perceptions of corruption:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[Multiple Values]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Log GDP per capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Social support:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Healthy life expectancy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Freedom to make life choices:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Generosity:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Explained by: Perceptions of corruption:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='8' />
+            <format attr='wrap' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='on' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='8' />
+            <format attr='wrap' data-class='subtotal' scope='cols' value='on' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='wrap' data-class='subtotal' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='on' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='left' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='on' />
+            <format attr='text-align' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='center' />
+            <format attr='text-orientation' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='0' />
+            <format attr='vertical-align' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='bottom' />
+            <format attr='font-size' field='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' />
+              <text column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' />
+              <wedge-size column='[federated.1llshez07zulbd14gyd081vcgiwf].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C95D8AD-3B34-4B01-8CAE-11952E6ADFC2}' />
+    </worksheet>
+    <worksheet name='Geospatial View of The Happiness Index'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldHappinessReport_processed_karel' name='federated.1llshez07zulbd14gyd081vcgiwf' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1llshez07zulbd14gyd081vcgiwf'>
+            <column caption='Country name1' datatype='string' name='[Country name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Ladder score 2021]' role='measure' type='quantitative' />
+            <column-instance column='[Country name]' derivation='None' name='[none:Country name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ladder score 2021]' derivation='Sum' name='[sum:Ladder score 2021:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1llshez07zulbd14gyd081vcgiwf].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1llshez07zulbd14gyd081vcgiwf].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1llshez07zulbd14gyd081vcgiwf].[Latitude (generated)]</column>
+            <column>[federated.1llshez07zulbd14gyd081vcgiwf].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[Longitude (generated)]' field-type='quantitative' max='27133630.074114792' min='-12861400.038677536' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[Latitude (generated)]' field-type='quantitative' max='16447116.09686153' min='-12207100.564534934' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' max='10.0' min='0.0' palette='red_green_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Country name:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Country name:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Country name:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Country name:nk]' />
+              <color column='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' />
+              <geometry column='[federated.1llshez07zulbd14gyd081vcgiwf].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1llshez07zulbd14gyd081vcgiwf].[Latitude (generated)]</rows>
+        <cols>[federated.1llshez07zulbd14gyd081vcgiwf].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2C65EBD5-F531-4414-AADC-0C3F0A4D2CE5}' />
+    </worksheet>
+    <worksheet name='Happiness by Region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldHappinessReport_processed_karel' name='federated.1llshez07zulbd14gyd081vcgiwf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1llshez07zulbd14gyd081vcgiwf'>
+            <column datatype='real' name='[Dystopia + residual]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Freedom to make life choices]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Generosity]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Healthy life expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Log GDP per capita]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Perceptions of corruption]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Explained by: Social support]' role='measure' type='quantitative' />
+            <column caption='Regional indicator1' datatype='string' name='[Regional indicator]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Dystopia + residual]' derivation='Avg' name='[avg:Dystopia + residual:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Freedom to make life choices]' derivation='Avg' name='[avg:Explained by: Freedom to make life choices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Generosity]' derivation='Avg' name='[avg:Explained by: Generosity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Healthy life expectancy]' derivation='Avg' name='[avg:Explained by: Healthy life expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Log GDP per capita]' derivation='Avg' name='[avg:Explained by: Log GDP per capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Perceptions of corruption]' derivation='Avg' name='[avg:Explained by: Perceptions of corruption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Explained by: Social support]' derivation='Avg' name='[avg:Explained by: Social support:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Regional indicator]' derivation='None' name='[none:Regional indicator:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Dystopia + residual:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Generosity:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Perceptions of corruption:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Freedom to make life choices:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Healthy life expectancy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Social support:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Log GDP per capita:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Dystopia + residual:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Generosity:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Perceptions of corruption:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Freedom to make life choices:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Healthy life expectancy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Social support:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1llshez07zulbd14gyd081vcgiwf].[avg:Explained by: Log GDP per capita:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Regional indicator:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;North America and ANZ&quot;</bucket>
+              <bucket>&quot;Western Europe&quot;</bucket>
+              <bucket>&quot;Central and Eastern Europe&quot;</bucket>
+              <bucket>&quot;Latin America and Caribbean&quot;</bucket>
+              <bucket>&quot;East Asia&quot;</bucket>
+              <bucket>&quot;Commonwealth of Independent States&quot;</bucket>
+              <bucket>&quot;Southeast Asia&quot;</bucket>
+              <bucket>&quot;Middle East and North Africa&quot;</bucket>
+              <bucket>&quot;Sub-Saharan Africa&quot;</bucket>
+              <bucket>&quot;South Asia&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[Multiple Values]' field-type='quantitative' max='10.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[Multiple Values]' scope='cols' value='Ladder Score 2021' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Regional indicator:nk]' value='208' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Regional indicator:nk]' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1llshez07zulbd14gyd081vcgiwf].[none:Regional indicator:nk]</rows>
+        <cols>[federated.1llshez07zulbd14gyd081vcgiwf].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{CA11394F-8F07-4855-B70D-D2DA7E06184A}' />
+    </worksheet>
+    <worksheet name='Ladder Score 2021 vs Logged GDP per Capita'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldHappinessReport_processed_karel' name='federated.1llshez07zulbd14gyd081vcgiwf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1llshez07zulbd14gyd081vcgiwf'>
+            <column caption='Country name1' datatype='string' name='[Country name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Ladder score 2021]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Logged GDP per capita]' role='measure' type='quantitative' />
+            <column-instance column='[Country name]' derivation='None' name='[none:Country name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ladder score 2021]' derivation='Sum' name='[sum:Ladder score 2021:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Logged GDP per capita]' derivation='Sum' name='[sum:Logged GDP per capita:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Logged GDP per capita:qk]' field-type='quantitative' max='15.560324205633085' min='2.3226839203895513' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' field-type='quantitative' max='10.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' value='68' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1llshez07zulbd14gyd081vcgiwf].[none:Country name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.75762432813644409' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='4' />
+                <format attr='stroke-color' value='#00000067' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]</rows>
+        <cols>[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Logged GDP per capita:qk]</cols>
+      </table>
+      <simple-id uuid='{503D139C-5C8F-494B-AA60-F2624D837B4B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='7' param='horz' type-v2='layout-flow' w='99002' x='499' y='978'>
+            <zone h='98044' id='5' type-v2='layout-basic' w='99002' x='499' y='978'>
+              <zone h='49022' id='3' name='Geospatial View of The Happiness Index' w='46522' x='47430' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='9' name='Happiness by Region' w='46944' x='499' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='11' name='Ladder Score 2021 vs Logged GDP per Capita' w='52058' x='47443' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='489' h='49022' id='8' is-fixed='true' name='Geospatial View of The Happiness Index' pane-specification-id='1' param='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' type-v2='color' w='5549' x='93952' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='20' is-scaled='1' param='Image/pearson_correlation.png' type-v2='bitmap' w='46931' x='499' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='2934' id='19' type-v2='dashboard-object' w='1496' x='40399' y='50000'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{797A8A05-3F38-45B8-B617-AFFA27905541}&quot; zone-id=&quot;19&quot; zone-ids=[18]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='29' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone fixed-size='280' h='49022' id='20' is-fixed='true' is-scaled='1' param='Image/pearson_correlation.png' type-v2='bitmap' w='46931' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='3' is-fixed='true' name='Geospatial View of The Happiness Index' w='46522' x='47430' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='489' h='49022' id='8' name='Geospatial View of The Happiness Index' pane-specification-id='1' param='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' type-v2='color' w='5549' x='93952' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='9' is-fixed='true' name='Happiness by Region' w='46944' x='499' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='11' is-fixed='true' name='Ladder Score 2021 vs Logged GDP per Capita' w='52058' x='47443' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{817662D1-8BA7-4B95-8EAF-67E3989B1ACB}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Happiness Index 2021 Report</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='178' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98280' id='1' param='vert' removable='false' type-v2='layout-flow' w='98910' x='545' y='860'>
+            <zone h='3548' id='3' type-v2='title' w='98910' x='545' y='860' />
+            <zone fixed-size='132' h='14194' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98910' x='545' y='4408' />
+            <zone h='80538' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98910' x='545' y='18602'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Happiness Level Across the Globe' captured-sheet='Geospatial View of The Happiness Index' id='1' />
+                  <story-point caption='Happiness Index by Region' captured-sheet='Happiness by Region' id='2' />
+                  <story-point caption='Percentage of Factors affecting Ladder Score' captured-sheet='Distribution of Explanatory Factors' id='6' />
+                  <story-point caption='Correlation Coefficient Between Features' captured-sheet='img_pearson_r' id='7' />
+                  <story-point caption='Ladder Score 2021 vs Logged GDP per Capita' captured-sheet='Ladder Score 2021 vs Logged GDP per Capita' id='3' />
+                  <story-point caption='95% PI for Ladder Score of atleast 5' captured-sheet='img_95PInterval' id='8' />
+                  <story-point caption='Dashboard' captured-sheet='Dashboard 1' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{7FEFD22D-F57D-411A-BC88-9FF1DD8FB3B0}' />
+    </dashboard>
+    <dashboard name='img_95PInterval'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='3' is-scaled='1' param='Image/95PI.png' type-v2='bitmap' w='99002' x='499' y='978'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='9' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone fixed-size='280' h='98044' id='3' is-fixed='true' is-scaled='1' param='Image/95PI.png' type-v2='bitmap' w='99002' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{65E90510-9D7D-452C-8F4D-AE98C8810158}' />
+    </dashboard>
+    <dashboard name='img_pearson_r'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='3' is-scaled='1' param='Image/pearson_correlation.png' type-v2='bitmap' w='99002' x='499' y='978'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='9' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone fixed-size='280' h='98044' id='3' is-fixed='true' is-scaled='1' param='Image/pearson_correlation.png' type-v2='bitmap' w='99002' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{13C5419D-FB08-4692-86C2-48F8CAEA77FF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Geospatial View of The Happiness Index'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1llshez07zulbd14gyd081vcgiwf].[sum:Ladder score 2021:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBCF2AFD-0D11-4015-8901-F204D68D2DE8}' />
+    </window>
+    <window class='worksheet' name='Happiness by Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='226'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{545B8D56-163A-4561-9F74-8911F906EF62}' />
+    </window>
+    <window class='worksheet' name='Ladder Score 2021 vs Logged GDP per Capita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F99EE717-A61C-4664-95D1-FFE5325A72A0}' />
+    </window>
+    <window class='worksheet' name='Distribution of Explanatory Factors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='162'>
+            <card pane-specification-id='0' param='[federated.1llshez07zulbd14gyd081vcgiwf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{24E8A02F-DBFF-458F-8C64-FDC64FD033DA}' />
+    </window>
+    <window class='dashboard' name='img_pearson_r'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{1C827E95-C9A1-4D3B-B70D-D702E499CC07}' />
+    </window>
+    <window class='dashboard' name='img_95PInterval'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{E49D5823-A909-446F-8F08-A8EF37B10418}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Geospatial View of The Happiness Index'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Happiness by Region' />
+        <viewpoint name='Ladder Score 2021 vs Logged GDP per Capita'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='20' />
+      <simple-id uuid='{797A8A05-3F38-45B8-B617-AFFA27905541}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{E6049AB4-A1F2-4CD9-A25F-1E77174DEC39}' />
+    </window>
+  </windows>
+</workbook>
